@@ -352,3 +352,29 @@ Documentação de referência sobre ZSWAP: [1](https://wiki.debian.org/Zswap) [2
 - **Vesktop** - Cliente não oficial para Dircord com recursos extras: [dev.vencord.Vesktop](https://flathub.org/apps/dev.vencord.Vesktop)
 - **FlatSweep** - limpador de resíduos de pacotes flatpak: [FlatSweep](https://flathub.org/apps/io.github.giantpinkrobots.flatsweep)
 - **CachyOs NVIDIA** - Otimizações para GPU - https://github.com/CachyOS/CachyOS-Settings/blob/master/usr/lib/modprobe.d/nvidia.conf
+
+</br>
+# Instalação do Teams no Linux
+A Microsoft encerrou o suporte ao cliente nativo do Microsoft Teams para Linux. Para usar o Teams no Debian, as alternativas recomendadas são instalar o cliente não oficial teams-for-linux via Snap ou utilizar a versão Web / PWA (Progressive Web App) pelo navegador.
+
+Opção 1: Instalar o cliente não oficial (teams-for-linux via Snap)
+
+O teams-for-linux é um cliente empacotado via Electron baseado na versão web do Teams.
+1. Atualize os pacotes e instale o suporte ao snapd no Debian:bash
+sudo apt update
+sudo apt install snapd
+Use o código com cuidado.
+2. Inicie ou habilite o serviço do Snap (se necessário) e instale o pacote principal:bash
+sudo snap install snapd
+Use o código com cuidado.
+3. Instale o teams-for-linux:bash
+sudo snap install teams-for-linux
+Use o código com cuidado.
+</br>
+Opção 2: Usar o Teams via Navegador (Web / PWA)
+
+Você pode acessar o serviço diretamente pelo navegador ou transformá-lo em um aplicativo isolado:
+1. Abra o Google Chrome ou Microsoft Edge no Debian.
+2. Acesse o portal oficial em teams.live.com e faça login na sua conta.
+3. No próprio navegador, clique no ícone de instalação de aplicativo (geralmente na barra de endereços com o símbolo de "+") para instalar o Teams como um PWA (aplicativo de área de trabalho isolado).
+Você prefere utilizar a versão em pacote Snap (teams-for-linux) ou o acesso via navegador/PWA? Se tiver algum erro durante a instalação do Snap, posso ajudar a resolver.
